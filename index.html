@@ -138,7 +138,7 @@ html[lang=en] .panel p{text-wrap:balance}
    <p class="t small" data-en="|| Shree Ganeshaya Namah ||">॥ श्री गणेशाय नमः ॥</p>
    <h1 class="gold" data-en="Shubh Vivah">शुभविवाह</h1>
    <p class="cover-names gold" data-en="Akash<small>&amp;</small>Rupal">आकाश<small>आणि</small>रूपल</p>
-   <button class="btn" id="open" type="button" aria-label="पैठणीची लग्नपत्रिका उघडा" data-en="Open the Invitation">पत्रिका उघडा</button>
+   <button class="btn" id="open" type="button" aria-label="पत्रिका उघडण्यासाठी येथे टॅप करा" data-en="Tap to open the invitation">पत्रिका उघडा (टॅप करा)</button>
    <p class="t small" data-en="The More &amp; Aire Families">मोरे व ऐरे परिवार</p>
   </div>
   <div class="roll" aria-hidden="true"></div>
@@ -213,7 +213,7 @@ function setLang(l){
  document.querySelectorAll('[data-en]').forEach(e=>{if(e.dataset.mr===undefined)e.dataset.mr=e.innerHTML;e.innerHTML=l==='en'?e.dataset.en:e.dataset.mr});
  langBtn.textContent=l==='en'?'मराठी':'EN';
  langBtn.setAttribute('aria-label',l==='en'?'मराठीत वाचा':'Translate to English');langBtn.title=langBtn.getAttribute('aria-label');
- btn.setAttribute('aria-label',l==='en'?'Open the invitation':'पैठणीची लग्नपत्रिका उघडा');
+ btn.setAttribute('aria-label',l==='en'?'Open the invitation':'पत्रिका उघडण्यासाठी येथे टॅप करा');
  welcome.setAttribute('aria-label',l==='en'?'Welcome':'सुस्वागतम्');
  welcome.querySelector('img').alt=l==='en'?'Maharashtrian bride and groom in nauvari sari, pheta and mundavalya, holding flower garlands':'नऊवारी, फेटा आणि मुंडावळ्यांतील मराठी वधू–वर, फुलांचे हार हातात';
  document.querySelector('main').setAttribute('aria-label',l==='en'?'Akash and Rupal’s animated Paithani wedding invitation':'आकाश आणि रूपल यांची पैठणीवरील अ‍ॅनिमेटेड लग्नपत्रिका');
