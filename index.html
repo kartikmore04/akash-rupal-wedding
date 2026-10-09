@@ -113,7 +113,7 @@ html[lang=en] .panel p{text-wrap:balance}
 .welcome img{transform:translateY(var(--art-pull,0px));will-change:transform}
 .panel:before{content:'';position:absolute;top:0;left:14.8%;right:14.8%;height:40px;background:linear-gradient(#25071a35,transparent);opacity:var(--fold,0);pointer-events:none}
 .gold{scroll-margin-top:55px}
-.actions .btn{padding:10px 14px}
+.actions .btn{padding:10px 14px;display:flex;align-items:center;justify-content:center;gap:10px}.action-icon{font-size:22px;line-height:1;filter:drop-shadow(0 1px 0 #290823)}.actions .btn:hover .action-icon{transform:scale(1.12)}.tap-guide{position:absolute;top:55%;right:-3%;display:flex;align-items:center;gap:5px;color:#f0cf82;font-size:12px;line-height:1.2;text-shadow:0 1px 0 #290823;animation:guideFloat 2.2s ease-in-out infinite;pointer-events:none}.guide-arrow{font-family:Arial,sans-serif;font-size:30px;line-height:1;transform:rotate(-18deg)}.guide-text{white-space:nowrap}.tap-guide:before{content:"";position:absolute;inset:-7px -9px;border:1px solid #dcb87266;border-radius:999px}.cover-copy{position:relative} guideFloat{0%,100%{transform:translate(0,0)}50%{transform:translate(-4px,-5px)}}
 .count b{font-variant-numeric:tabular-nums}
 .sr.feedback{position:fixed;z-index:30;clip-path:none;width:auto;height:auto;left:max(12px,calc((100vw - 560px)/2 + 18px));right:max(12px,calc((100vw - 560px)/2 + 18px));bottom:max(18px,env(safe-area-inset-bottom));padding:12px 16px;background:#2a0824f5;border:1px solid #dcb872;color:#f2d99f;text-align:center;font-size:15px;line-height:1.8}
 @media(prefers-reduced-motion:reduce){.welcome img{transform:none;will-change:auto}.panel:before{display:none}}
@@ -138,7 +138,7 @@ html[lang=en] .panel p{text-wrap:balance}
    <p class="t small" data-en="|| Shree Ganeshaya Namah ||">॥ श्री गणेशाय नमः ॥</p>
    <h1 class="gold" data-en="Shubh Vivah">शुभविवाह</h1>
    <p class="cover-names gold" data-en="Akash<small>&amp;</small>Rupal">आकाश<small>आणि</small>रूपल</p>
-   <button class="btn" id="open" type="button" aria-label="पत्रिका उघडण्यासाठी येथे टॅप करा"><span class="btn-main" data-en="Open the invitation">पत्रिका उघडा</span><span class="btn-note" data-en="Tap to open">टॅप करून उघडा</span></button>
+   <button class="btn" id="open" type="button" aria-label="पत्रिका उघडण्यासाठी येथे टॅप करा"><span class="btn-main" data-en="Open the invitation">पत्रिका उघडा</span><span class="btn-note" data-en="Tap to open">टॅप करून उघडा</span></button><span class="tap-guide" aria-hidden="true"><span class="guide-arrow">↙</span><span class="guide-text">इथे टॅप करा</span></span>
    <p class="t small" data-en="The More &amp; Aire Families">मोरे व ऐरे परिवार</p>
   </div>
   <div class="roll" aria-hidden="true"></div>
@@ -171,10 +171,10 @@ html[lang=en] .panel p{text-wrap:balance}
   <h3 class="venue gold rv" data-en="Sanabil Banquets">सनाबिल बँक्वेट्स</h3>
   <p class="addr t rv" data-en="1st Floor, 139/A, off Marol Maroshi Road<br>Opposite the Fire Brigade, Gamdevi, Marol<br>Andheri East, Mumbai 400059">पहिला मजला, १३९/ए, मरोळ मरोशी रोडजवळ<br>अग्निशमन केंद्रासमोर, गावदेवी, मरोळ<br>अंधेरी पूर्व, मुंबई ४०००५९</p>
   <div class="actions rv">
-   <a class="btn" id="map" target="_blank" rel="noopener" data-en="Get Directions">मार्ग पहा</a>
-   <a class="btn" id="cal" target="_blank" rel="noopener" data-en="Add to Calendar">कॅलेंडरमध्ये जोडा</a>
-   <a class="btn" id="rsvp" target="_blank" rel="noopener" hidden data-en="RSVP on WhatsApp">उपस्थिती कळवा</a>
-   <button class="btn" id="share" type="button" data-en="Share Invitation">पत्रिका शेअर करा</button></div>
+   <a class="btn" id="map" target="_blank" rel="noopener"><span class="action-icon" aria-hidden="true">📍</span><span data-en="Get Directions">मार्ग पहा</span></a>
+   <a class="btn" id="cal" target="_blank" rel="noopener"><span class="action-icon" aria-hidden="true">📅</span><span data-en="Add to Calendar">कॅलेंडरमध्ये जोडा</span></a>
+   <a class="btn" id="rsvp" target="_blank" rel="noopener" hidden><span class="action-icon" aria-hidden="true">💬</span><span data-en="RSVP on WhatsApp">उपस्थिती कळवा</span></a>
+   <button class="btn" id="share" type="button"><span class="action-icon" aria-hidden="true">📤</span><span data-en="Share Invitation">पत्रिका शेअर करा</span></button></div>
   <p class="love gold rv" data-en="Your presence<br>is our joy.">आपले आगमन<br>हाच आमचा आनंद.</p>
   <p class="sign t rv" data-en="The More &amp; Aire Families">मोरे व ऐरे परिवार</p></section>
  <div class="end" role="img" aria-label="पूर्ण मोरांची नक्षी आणि शेवटची हिरवी जरीची किनार"></div>
