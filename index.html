@@ -60,9 +60,9 @@ main{position:relative;max-width:560px;margin:0 auto;box-shadow:0 0 70px #000c}
 .cover-copy h1{font-size:clamp(40px,min(14cqw,8svh),68px);margin-top:2px}
 .cover-names{font-size:clamp(26px,min(8cqw,5svh),42px);line-height:1.6}
 .cover-names small{font-family:Tiro,Corm,serif;font-size:.5em;margin:0 .5em;-webkit-text-fill-color:#e2c58d}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:8px 22px;border:2px dashed #e4c18b;border-radius:26px;background:#3c0c3166;color:#f7e2b0;text-decoration:none;text-shadow:0 1px 0 #290823;cursor:pointer;transition:background .25s,transform .25s}
-.btn:hover{background:#6a244899;transform:translateY(-1px)}
-.cover .btn{margin:2.2svh 0 1.4svh;font-size:18px;pointer-events:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:3px;min-height:48px;padding:12px 30px;border:1px solid #f0cf82;border-radius:6px;background:linear-gradient(145deg,#6b254d 0%,#3c0c31 48%,#6b254d 100%);color:#f7e2b0;text-decoration:none;text-shadow:0 1px 0 #290823;cursor:pointer;position:relative;box-shadow:inset 0 0 0 3px #470b39,inset 0 0 0 4px #c99b4f,0 5px 18px #18031699;transition:background .25s,transform .25s,box-shadow .25s}
+.btn:hover{background:linear-gradient(145deg,#7d3157 0%,#4a123b 48%,#7d3157 100%);transform:translateY(-2px);box-shadow:inset 0 0 0 3px #470b39,inset 0 0 0 4px #f0cf82,0 8px 22px #180316aa}.cover .btn:before,.cover .btn:after{content:"◆";position:absolute;left:50%;transform:translateX(-50%);font-size:10px;color:#f0cf82;background:#470b39;padding:0 5px;line-height:1}.cover .btn:before{top:-6px}.cover .btn:after{bottom:-6px}.btn-main{font-size:19px;line-height:1.35}.btn-note{font-size:11px;line-height:1.35;letter-spacing:.08em;color:#f0cf82}
+.cover .btn{margin:2.2svh 0 1.4svh;pointer-events:auto}
 .roll{position:absolute;left:0;right:0;bottom:0;height:22px;background:linear-gradient(#f0d28f,#b8893b 28%,#6d2a55 62%,#2a0824);box-shadow:0 16px 26px #000a,0 -2px 6px #0006;opacity:0;transition:opacity .4s .2s}
 .unrolling .cover{transform:translate3d(0,-104%,0)}
 .unrolling .roll{opacity:1}
@@ -138,7 +138,7 @@ html[lang=en] .panel p{text-wrap:balance}
    <p class="t small" data-en="|| Shree Ganeshaya Namah ||">॥ श्री गणेशाय नमः ॥</p>
    <h1 class="gold" data-en="Shubh Vivah">शुभविवाह</h1>
    <p class="cover-names gold" data-en="Akash<small>&amp;</small>Rupal">आकाश<small>आणि</small>रूपल</p>
-   <button class="btn" id="open" type="button" aria-label="पत्रिका उघडण्यासाठी येथे टॅप करा" data-en="Tap to open the invitation">पत्रिका उघडा (टॅप करा)</button>
+   <button class="btn" id="open" type="button" aria-label="पत्रिका उघडण्यासाठी येथे टॅप करा"><span class="btn-main" data-en="Open the invitation">पत्रिका उघडा</span><span class="btn-note" data-en="Tap to open">टॅप करून उघडा</span></button>
    <p class="t small" data-en="The More &amp; Aire Families">मोरे व ऐरे परिवार</p>
   </div>
   <div class="roll" aria-hidden="true"></div>
